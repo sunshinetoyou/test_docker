@@ -1,0 +1,12 @@
+name: Actions Test
+
+on:
+  push:
+    branches: [ main ]    # main 브랜치에 push 될 때마다 실행
+
+jobs:
+  test-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world print
+        run: echo "✅ GitHub Actions 작동 확인!"
